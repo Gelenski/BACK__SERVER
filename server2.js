@@ -6,6 +6,8 @@ let port = 3000;
 let host = "localhost";
 
 const server = http.createServer((req, res) => {
+  res.setHeader("content-type", "text/html");
+  fs.readFile("page1.html", (erro) => {});
   res.end();
 });
 
