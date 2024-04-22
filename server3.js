@@ -7,9 +7,10 @@ const port = 3000;
 const host = "localhost";
 
 const server = http.createServer((req, res) => {
-  // Header
+  // Header.
   res.setHeader("content-type", "text/html");
 
+  // Seleção da Página.
   let html_page = "";
   switch (req.url) {
     case "/":
