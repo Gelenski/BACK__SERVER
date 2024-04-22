@@ -44,8 +44,6 @@ const server = http.createServer((req, res) => {
       res.end();
     }
   });
-
-  res.end();
 });
 server.listen(port, host, () => {
   console.log("[SERVER]: Is running on port 3000.");
